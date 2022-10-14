@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <title>Capture the button</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="menu">
+            <input type="text" placeholder="Username..." id="input_username" />
+            <select>
+                <option id="0">Select Team</option>
+                <option id="1">Team Red</option>
+                <option id="2">Team Blue</option>
+            </select>
+            <button id="play">Play</button>
+        </div>
+        <div style="visibility: hidden;" class="game">
+            <div class="team_red">
+                <div class="clicks_red">
+                    0 Clicks
+                </div>
+            </div>
+            <div class="team_blue">
+                <div class="clicks_blue">
+                    0 Clicks
+                </div>
+            </div>
+            <div class="header">Loading...</div>
+            <div class="click_button">
+                <span class="click">Click</span>
+            </div>
+        </div>
+    </body>
+</html>
